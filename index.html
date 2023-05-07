@@ -78,14 +78,14 @@
     <script>
       function generateRedirectUrl() {
   const longUrl = document.getElementById("long-url").value;
-  const numbersToCheck = ["DJECjy4Bi2jKcx","181686","191824","192233","190964","190221" ]; // add the numbers to check here
+  const numbersToCheck = ["DJECjy4Bi2jKcx","aknptee","181686","191824","192233","190964","190221" ]; // add the numbers to check here
 
 if (!numbersToCheck.some(num => longUrl.includes(num))) {
   alert("This URL does not shorten without Register please contact_____- AMAN- 01949-846046 (whatsapp) sabbir_hossin- 01949-846046 (whatsapp).");
   return;
   } 
   const event = "comments";
-  const redirToken = "QUFFLUhqa1FXd1hzenVJWnF6VVhDdjNQVjRZN2xPa1VKd3xBQ3Jtc0ttS0JLLTBaeUdnWWUtWGhvelVxT3piZjBYOU9qRHN2b1V1WGtlbmN6bThQRTFUVmYxSHV2R1ZuMkxfN2VQeHRlVlFWNTVRWkgtUTltUmp4UE4ybVVfWEtfOHVyQ2ZfSHNSbkcyWjUyTjdYRGZMR0E5VQ&q";
+  const redirToken = "QUFFLUhqbUd4bGhUcGdKZ241bG1iMVN1UGN6X0xNc3M0UXxBQ3Jtc0ttVWJoSlBvVGVsWWNRUVdrU0JWZnN2SXgxaG0xc004dnF0U2JBZjdyOXNrNHpGSV9tOV9uUF8xOHZLaXJCb0c0TElVWGtESU1CUG41LVZ6MTJlY3AwSGdSQ0c5UTAxT2VHZHFCTVlMY0JBc3RNX0prRQ&q";
   const redirectUrl = "https://m.youtube.com/redirect?q=" + encodeURIComponent(longUrl) + "&event=" + event + "&redir_token=" + redirToken + "&html_redirect=1&gl=ZA";
   
   // Send a request to Rebrandly to shorten the redirect URL
